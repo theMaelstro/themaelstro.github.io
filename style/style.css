@@ -212,3 +212,22 @@ body {
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
+	
+/* Media Buttons */
+.fa-button {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+	
+.fa-button:hover {
+    opacity: 0.7;
+}
+	
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
