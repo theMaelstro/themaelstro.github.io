@@ -214,7 +214,7 @@ body {
 }
 	
 /* Media Buttons */
-.fa-button {
+.media-button {
   padding: 20px;
   font-size: 30px;
   width: 50px;
@@ -223,11 +223,11 @@ body {
   margin: 5px 2px;
 }
 	
-.fa-button:hover {
+.media-button:hover {
     opacity: 0.7;
 }
 	
-.fa-youtube {
+.youtube {
   background: #bb0000;
   color: white;
 }
