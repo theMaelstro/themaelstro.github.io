@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us">
+ 
+<head>
+	<title>FlagCalc</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script src="script/calc.js" type="text/javascript"></script> 
+	
+</head>
+<body>
+<table>
+	<thead>
+		<caption><h2>KeyQuest Flag Calculator</h2></caption>
+	<thead>
+	<tbody>
+		<tr>
+			<th>Rank</th>
+			<th>Keys Complete</th>
+			<th>Urgent Complete</th>
+		<tr>
+			<td>HR1</td>
+			<td><input type="number" id="hr1" name="hr1" min="0" value="0"></td>
+			<td><input type="checkbox" id="urgent1" name="urgent1"></td>
+		</tr>
+		
+		<tr>
+			<td>HR2</td>
+			<td><input type="number" id="hr2" name="hr2" min="0" value="0"></td>
+			<td><input type="checkbox" id="urgent2" name="urgent2"></td>
+		</tr>
+		
+		<tr>
+			<td>HR3</td>
+			<td><input type="number" id="hr3" name="hr3" min="0" value="0"></td>
+			<td><input type="checkbox" id="urgent3" name="urgent3"></td>
+		</tr>
+		
+		<tr>
+			<td>HR4</td>
+			<td><input type="number" id="hr4" name="hr4" min="0" value="0"></td>
+			<td><input type="checkbox" id="urgent4" name="urgent4"></td>
+		</tr>
+		
+		<tr>
+			<td>HR5</td>
+			<td><input type="number" id="hr5" name="hr5" min="0" value="0"></td>
+			<td><input type="checkbox" id="urgent5" name="urgent5"></td>
+		</tr>
+		
+		<tr>
+			<td>HR6</td>
+			<td><input type="number" id="hr6" name="hr6" min="0" value="0"></td>
+			<td><input type="checkbox" id="urgent6" name="urgent6"></td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan="3"><input type="submit" value="Submit" onclick="calculateFlag()"></td></tr>
+		<tr><td colspan="3"><p id="printResult">FlagResult</p></td></tr>
+	</tfoot>
+</table>
+	
+
+
+
+</body>
+
+</html> 
