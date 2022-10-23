@@ -15,13 +15,16 @@ function loopBitGroup(group, count, check){
 }
 
 function leadingZeroHex(group){
-	console.log("WORKS "+group);
+	console.log("BEFORE FIX "+group);
+	console.log("LENGTH "+group.length);
 	if(group.length < 2) {
 		for(var i = group.length; i < 2; i++){
+			console.log("ADDING 0 "+group);
 			group += "0";
 		}
 		group = group.split("").reverse().join("");
 	}
+	console.log("AFTER FIX "+group);
 }
 
 function calculateFlag() {
@@ -63,13 +66,14 @@ function calculateFlag() {
 	bitgroup7 = parseInt(bitgroup.substring(48,56).split("").reverse().join(""), 2).toString(16);
 	bitgroup8 = parseInt(bitgroup.substring(56,64).split("").reverse().join(""), 2).toString(16);
 	
-	console.log(bitgroup1);
+	
 	leadingZeroHex(bitgroup1);
-	console.log(bitgroup1);
 	leadingZeroHex(bitgroup2);
 	leadingZeroHex(bitgroup3);
 	leadingZeroHex(bitgroup4);
+	console.log(bitgroup5);
 	leadingZeroHex(bitgroup5);
+	console.log(bitgroup5);
 	leadingZeroHex(bitgroup6);
 	leadingZeroHex(bitgroup7);
 	leadingZeroHex(bitgroup8);
