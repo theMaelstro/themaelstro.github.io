@@ -15,16 +15,13 @@ function loopBitGroup(group, count, check){
 }
 
 function leadingZeroHex(group){
-	console.log("BEFORE FIX "+group);
-	console.log("LENGTH "+group.length);
 	if(group.length < 2) {
 		for(var i = group.length; i < 2; i++){
-			console.log("ADDING 0 "+group);
 			group += "0";
 		}
 		group = group.split("").reverse().join("");
 	}
-	console.log("AFTER FIX "+group);
+	return group
 }
 
 function calculateFlag() {
@@ -57,26 +54,15 @@ function calculateFlag() {
 		bitgroup += "0";
 	}
 		
-	bitgroup1 = parseInt(bitgroup.substring(0,8).split("").reverse().join(""), 2).toString(16);
-	bitgroup2 = parseInt(bitgroup.substring(8,16).split("").reverse().join(""), 2).toString(16);
-	bitgroup3 = parseInt(bitgroup.substring(16,24).split("").reverse().join(""), 2).toString(16);
-	bitgroup4 = parseInt(bitgroup.substring(24,32).split("").reverse().join(""), 2).toString(16);
-	bitgroup5 = parseInt(bitgroup.substring(32,40).split("").reverse().join(""), 2).toString(16);
-	bitgroup6 = parseInt(bitgroup.substring(40,48).split("").reverse().join(""), 2).toString(16);
-	bitgroup7 = parseInt(bitgroup.substring(48,56).split("").reverse().join(""), 2).toString(16);
-	bitgroup8 = parseInt(bitgroup.substring(56,64).split("").reverse().join(""), 2).toString(16);
+	bitgroup1 = leadingZeroHex(parseInt(bitgroup.substring(0,8).split("").reverse().join(""), 2).toString(16));
+	bitgroup2 = leadingZeroHex(parseInt(bitgroup.substring(8,16).split("").reverse().join(""), 2).toString(16));
+	bitgroup3 = leadingZeroHex(parseInt(bitgroup.substring(16,24).split("").reverse().join(""), 2).toString(16));
+	bitgroup4 = leadingZeroHex(parseInt(bitgroup.substring(24,32).split("").reverse().join(""), 2).toString(16));
+	bitgroup5 = leadingZeroHex(parseInt(bitgroup.substring(32,40).split("").reverse().join(""), 2).toString(16));
+	bitgroup6 = leadingZeroHex(parseInt(bitgroup.substring(40,48).split("").reverse().join(""), 2).toString(16));
+	bitgroup7 = leadingZeroHex(parseInt(bitgroup.substring(48,56).split("").reverse().join(""), 2).toString(16));
+	bitgroup8 = leadingZeroHex(parseInt(bitgroup.substring(56,64).split("").reverse().join(""), 2).toString(16));
 	
-	
-	leadingZeroHex(bitgroup1);
-	leadingZeroHex(bitgroup2);
-	leadingZeroHex(bitgroup3);
-	leadingZeroHex(bitgroup4);
-	console.log(bitgroup5);
-	leadingZeroHex(bitgroup5);
-	console.log(bitgroup5);
-	leadingZeroHex(bitgroup6);
-	leadingZeroHex(bitgroup7);
-	leadingZeroHex(bitgroup8);
 	binary_flag = bitgroup1 + bitgroup2 + bitgroup3 + bitgroup4 + bitgroup5 + bitgroup6 + bitgroup7 + bitgroup8;
 	
 	document.getElementById("printResult").innerHTML = binary_flag;
