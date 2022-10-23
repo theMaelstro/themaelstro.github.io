@@ -15,6 +15,7 @@ function loopBitGroup(group, count, check){
 }
 
 function leadingZeroHex(group){
+	console.log("WORKS "+group);
 	if(group.length < 2) {
 		for(var i = group.length; i < 2; i++){
 			group += "0";
@@ -62,7 +63,9 @@ function calculateFlag() {
 	bitgroup7 = parseInt(bitgroup.substring(48,56).split("").reverse().join(""), 2).toString(16);
 	bitgroup8 = parseInt(bitgroup.substring(56,64).split("").reverse().join(""), 2).toString(16);
 	
+	console.log(bitgroup1);
 	leadingZeroHex(bitgroup1);
+	console.log(bitgroup1);
 	leadingZeroHex(bitgroup2);
 	leadingZeroHex(bitgroup3);
 	leadingZeroHex(bitgroup4);
