@@ -2,69 +2,77 @@
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-us">
- 
-<head>
-	<title>theMaelstro</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="/style/style.css"/> 
-	<script src="/script/toggleMenuButton.js" type="text/javascript"></script> 
-	<script src="/script/toggleTopnav.js" type="text/javascript"></script> 
-</head>
- 
-<body>
-	
-<div class="header">
-  <h1>theMaelstro</h1>
-  <p>Compact Index of things I am doing.</p>
-</div>
 
-<div class="topnav" id="myTopnav">
-  <a href="/index.html">Home</a>
-  <a href="/sub/news.html">News</a>
-  <a href="/sub/contact.html">Contact</a>
-  <div class="dropdown">
-    <button class="dropdown-btn">Downloads 
+<head>
+    <title>theMaelstro</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <script src="/script/toggleMenuButton.js" type="text/javascript"></script>
+    <script src="/script/toggleTopnav.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>theMaelstro</h1>
+        <p>Compact Index of things I am doing.</p>
+    </div>
+
+    <div class="topnav" id="myTopnav">
+        <a href="/index.html">Home</a>
+        <a href="/sub/news.html">News</a>
+        <a href="/sub/contact.html">Contact</a>
+		<div class="dropdown">
+            <button class="dropdown-btn">Tools 
+			  <i class="fa fa-caret-down"></i>
+			</button>
+            <div id="download-container" class="dropdown-container">
+                <a href="/sub/flagcalc.html">Flag Calculator</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-btn">Downloads 
       <i class="fa fa-caret-down"></i>
     </button>
-    <div id="download-container" class="dropdown-container">
-      <a href="/sub/companionapp.html" class="active">MHFZZ Database</a>
+            <div id="download-container" class="dropdown-container">
+                <a href="/sub/companionapp.html" class="active">MHFZZ Database</a>
+            </div>
+        </div>
+        <a href="/sub/about.html">About</a>
+        <!--<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>-->
+        <div class="menu-button-container icon" onclick="toggleMenuButton(this),toggleTopnav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
     </div>
-  </div> 
-  <a href="/sub/about">About</a>
-  <!--<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>-->
-  <div class="menu-button-container icon" onclick="toggleMenuButton(this),toggleTopnav()">
-	  <div class="bar1"></div>
-	  <div class="bar2"></div>
-	  <div class="bar3"></div>
-	</div>
-</div>
 
-<div class="row content">
-  <div class="leftcolumn">
-      <div class="card">
-	<h2>MHFZZ Database</h2>
-	<h5>A Companion App port for Monster Hunter Frontier</h5>
-	<img src="/img/app_showcase.png" alt="Application Showcase Image"/>
-	<p>Description.</p>
-	<a href="https://github.com/theMaelstro/MHFZZDatabase/releases/download/v1.0.3/mhfzz_database_v1.0.3.apk" download="MHFZZ_Database.apk">Download Latest</a>
-      </div>
-  </div>
-  
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>About Me</h2>
-      <!--<div class="fakeimg" style="height:100px;"></div>-->
-	  <h5>I am Mael, aka MAEL, aka theMaelstro</h5>
-      <p>I like to tinker with mods and simple software.</p>
+    <div class="row content">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>MHFZZ Database</h2>
+                <h5>A Companion App port for Monster Hunter Frontier</h5>
+                <img src="/img/app_showcase.png" alt="Application Showcase Image" />
+                <p>Description.</p>
+                <a href="https://github.com/theMaelstro/MHFZZDatabase/releases/download/v1.0.3/mhfzz_database_v1.0.3.apk" download="MHFZZ_Database.apk">Download Latest</a>
+            </div>
+        </div>
+
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About Me</h2>
+                <!--<div class="fakeimg" style="height:100px;"></div>-->
+                <h5>I am Mael, aka MAEL, aka theMaelstro</h5>
+                <p>I like to tinker with mods and simple software.</p>
+            </div>
+
+        </div>
+
     </div>
-	
-  </div>
-  
-  
-</div>
 
 </body>
 <script src="/script/dropdown.js" type="text/javascript"></script>
-</html> 
+
+</html>
