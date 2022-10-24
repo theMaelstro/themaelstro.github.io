@@ -12,6 +12,7 @@
     <script src="/script/toggleMenuButton.js" type="text/javascript"></script>
     <script src="/script/toggleTopnav.js" type="text/javascript"></script>
     <script src="/script/calc.js" type="text/javascript"></script>
+	<script src="/script/clipboard.js" type="text/javascript"></script>
 
 </head>
 
@@ -54,61 +55,83 @@
         <div class="leftcolumn">
 
             <div class="card">
-                <h2>Keyflag Calculator</h2>
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>Rank</th>
-                            <th>Keys Complete</th>
-                            <th>Urgent Complete</th>
-                        </tr>
-                        <tr>
-                            <td>HR1</td>
-                            <td><input type="number" id="hr1" name="hr1" min="0" value="0" /></td>
-                            <td><input type="checkbox" id="urgent1" name="urgent1" /></td>
-                        </tr>
+				<h2>Keyflag Calculator</h2>
+				
+				<div class="input-container">
+					<button class="input-button fa fa-minus"></button>
+					<input type="number" class="input-field" id="hr1" name="hr1" min="0" value="0" />
+					<button class="input-button fa fa-plus"></button>
 
-                        <tr>
-                            <td>HR2</td>
-                            <td><input type="number" id="hr2" name="hr2" min="0" value="0" /></td>
-                            <td><input type="checkbox" id="urgent2" name="urgent2" /></td>
-                        </tr>
+					<label class="checkbox-container">
+						<input type="checkbox" id="urgent1" name="urgent1" />
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				
+				<div class="input-container">
+					<button class="input-button fa fa-minus"></button>
+					<input type="number" class="input-field" id="hr2" name="hr2" min="0" value="0" />
+					<button class="input-button fa fa-plus"></button>
 
-                        <tr>
-                            <td>HR3</td>
-                            <td><input type="number" id="hr3" name="hr3" min="0" value="0" /></td>
-                            <td><input type="checkbox" id="urgent3" name="urgent3" /></td>
-                        </tr>
+					<label class="checkbox-container">
+						<input type="checkbox" id="urgent2" name="urgent2" />
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				
+				<div class="input-container">
+					<button class="input-button fa fa-minus"></button>
+					<input type="number" class="input-field" id="hr3" name="hr3" min="0" value="0" />
+					<button class="input-button fa fa-plus"></button>
 
-                        <tr>
-                            <td>HR4</td>
-                            <td><input type="number" id="hr4" name="hr4" min="0" value="0" /></td>
-                            <td><input type="checkbox" id="urgent4" name="urgent4" /></td>
-                        </tr>
+					<label class="checkbox-container">
+						<input type="checkbox" id="urgent3" name="urgent3" />
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				
+				<div class="input-container">
+					<button class="input-button fa fa-minus"></button>
+					<input type="number" class="input-field" id="hr4" name="hr4" min="0" value="0" />
+					<button class="input-button fa fa-plus"></button>
 
-                        <tr>
-                            <td>HR5</td>
-                            <td><input type="number" id="hr5" name="hr5" min="0" value="0" /></td>
-                            <td><input type="checkbox" id="urgent5" name="urgent5" /></td>
-                        </tr>
+					<label class="checkbox-container">
+						<input type="checkbox" id="urgent4" name="urgent4" />
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				
+				<div class="input-container">
+					<button class="input-button fa fa-minus"></button>
+					<input type="number" class="input-field" id="hr5" name="hr5" min="0" value="0" />
+					<button class="input-button fa fa-plus"></button>
 
-                        <tr>
-                            <td>HR6</td>
-                            <td><input type="number" id="hr6" name="hr6" min="0" value="0" /></td>
-                            <td><input type="checkbox" id="urgent6" name="urgent6" /></td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="3"><input type="submit" value="Submit" onclick="calculateFlag()" /></td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <p id="printResult">FlagResult</p>
-                            </td>
-                        </tr>
-                    </tfoot>
-                </table>
+					<label class="checkbox-container">
+						<input type="checkbox" id="urgent5" name="urgent5" />
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				
+				<div class="input-container">
+					<button class="input-button fa fa-minus"></button>
+					<input type="number" class="input-field" id="hr6" name="hr6" min="0" value="0" />
+					<button class="input-button fa fa-plus"></button>
+
+					<label class="checkbox-container">
+						<input type="checkbox" id="urgent6" name="urgent6" />
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				
+				<div class="input-container">
+					<button style="width:100%;" class="color-btn color-btn-green" onclick="calculateFlag()">Calculate</button>
+				</div>
+				<div class="input-container">
+					<button style="width:100%;" class="color-btn color-btn-green" onclick="clearCalc()">Clear</button>
+				</div>
+
+				<div id="resultContainer">
+				</div>
             </div>
 			
 			<div class="card">

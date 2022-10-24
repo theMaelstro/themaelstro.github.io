@@ -233,3 +233,126 @@ body {
   background: #bb0000;
   color: white;
 }
+
+/* Buttons and Input Fields*/
+.color-btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Green */
+.color-btn-green {
+  border-color: #04AA6D;
+  color: green;
+}
+
+.color-btn-green:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+  height: 40px;
+}
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid #04AA6D;
+}
+
+.input-button {
+  padding: 10px;
+  background: #04AA6D;
+  border: none;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-button:hover {
+  border: 2px solid #04AA6D;
+  background-color: white;
+  color: #04AA6D;
+  cursor: pointer;
+}
+
+
+/* The container */
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #04AA6D;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 14px;
+  top: 5px;
+  width: 10px;
+  height: 20px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

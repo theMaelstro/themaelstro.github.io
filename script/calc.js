@@ -42,7 +42,7 @@ function calculateFlag() {
 	var sign = "0"
 	
 	var bitgroup = "";
-
+	if(countHR1 != 0){
 	bitgroup = sign + loopBitGroup(bitgroup, countHR1, urgentHR1);
 	bitgroup = loopBitGroup(bitgroup, countHR2, urgentHR2);
 	bitgroup = loopBitGroup(bitgroup, countHR3, urgentHR3);
@@ -64,7 +64,30 @@ function calculateFlag() {
 	bitgroup8 = leadingZeroHex(parseInt(bitgroup.substring(56,64).split("").reverse().join(""), 2).toString(16));
 	
 	binary_flag = bitgroup1 + bitgroup2 + bitgroup3 + bitgroup4 + bitgroup5 + bitgroup6 + bitgroup7 + bitgroup8;
+		
+	document.getElementById("resultContainer").innerHTML = "";
+	document.getElementById("resultContainer").innerHTML = 
+		'<h2>Result Flag</h2>' + '<h4>Copy text or use buttons to save in clipboard.</h4>' +
+		'<div class="input-container"><p style="width:100%;">!kqf ' + binary_flag + '</p><button style="width:100%;" class="color-btn color-btn-green" onclick="copyClipboard(this)"><i style="padding:3px;" class="fa fa-clipboard" aria-hidden="true"></i><input type="text" style="display:none" value="!kqf ' + binary_flag + '" />!kqf ' + binary_flag + '</button></div>' +
+		'<div class="input-container"><p style="width:100%;">' + binary_flag + '</p><button style="width:100%;" class="color-btn color-btn-green" onclick="copyClipboard(this)"><i style="padding:3px;" class="fa fa-clipboard" aria-hidden="true"></i><input type="text" style="display:none" value="' + binary_flag + '" />' + binary_flag + '</button></div>';
+	}
 	
-	document.getElementById("printResult").innerHTML = binary_flag;
-	
+}
+
+function clearCalc(){
+	document.getElementById("hr1").value = 0;
+	document.getElementById("hr2").value = 0;
+	document.getElementById("hr3").value = 0;
+	document.getElementById("hr4").value = 0;
+	document.getElementById("hr5").value = 0;
+	document.getElementById("hr6").value = 0;
+
+	document.getElementById("urgent1").checked = false;
+	document.getElementById("urgent2").checked = false;
+	document.getElementById("urgent3").checked = false;
+	document.getElementById("urgent4").checked = false;
+	document.getElementById("urgent5").checked = false;
+	document.getElementById("urgent6").checked = false;
+
+	document.getElementById("resultContainer").innerHTML = "";
 }
