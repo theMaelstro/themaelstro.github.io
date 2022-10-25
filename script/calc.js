@@ -68,9 +68,9 @@ function calculateFlag() {
 	document.getElementById("resultContainer").innerHTML = "";
 	document.getElementById("resultContainer").innerHTML = 
 		'<h2>Result Flag</h2>' + '<h4>Copy text or use buttons to save in clipboard.</h4>' +
-		'<p style="width:100%;">!kqf set ' + binary_flag + '</p>' +
+		'<p style="width:100%;">!kqf ' + binary_flag + '</p>' +
 		'<p style="width:100%;">' + binary_flag + '</p>' +
-		'<div class="input-container"><button style="width:100%;" class="color-btn color-btn-green" onclick="copyClipboard(this)"><i style="padding:3px;" class="fa fa-clipboard" aria-hidden="true"></i><input type="text" style="display:none" value="!kqf set ' + binary_flag + '" />!kqf set ' + binary_flag + '</button></div>' +
+		'<div class="input-container"><button style="width:100%;" class="color-btn color-btn-green" onclick="copyClipboard(this)"><i style="padding:3px;" class="fa fa-clipboard" aria-hidden="true"></i><input type="text" style="display:none" value="!kqf ' + binary_flag + '" />!kqf ' + binary_flag + '</button></div>' +
 		'<div class="input-container"><button style="width:100%;" class="color-btn color-btn-green" onclick="copyClipboard(this)"><i style="padding:3px;" class="fa fa-clipboard" aria-hidden="true"></i><input type="text" style="display:none" value="' + binary_flag + '" />' + binary_flag + '</button></div>';
 	}
 	
@@ -92,4 +92,17 @@ function clearCalc(){
 	document.getElementById("urgent6").checked = false;
 
 	document.getElementById("resultContainer").innerHTML = "";
+}
+
+function inputButtonAction(myElement, string){
+	myInput = parseInt(myElement.parentElement.children[1].value);
+	if(string === "add"){
+		myInput += 1;
+	}
+	else {
+		if(myInput >= 1){
+			myInput -= 1;
+		}
+	}
+	myElement.parentElement.children[1].value = myInput;
 }
