@@ -272,6 +272,18 @@ body {
   border: 2px solid #04AA6D;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .input-button {
   padding: 10px;
   background: #04AA6D;
@@ -282,10 +294,13 @@ body {
 }
 
 .input-button:hover {
+	cursor: pointer;
+}
+
+.input-button:active {
   border: 2px solid #04AA6D;
   background-color: white;
   color: #04AA6D;
-  cursor: pointer;
 }
 
 
@@ -293,7 +308,7 @@ body {
 .checkbox-container {
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 40px;
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 22px;
