@@ -177,6 +177,12 @@ body {
     width: 100%;
     text-align: left;
   }
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-container a{
+    width:100%;
+  }
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -185,6 +191,7 @@ body {
     width: 100%;
     padding: 0;
   }
+  
 }
 
 
@@ -242,6 +249,24 @@ body {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.flex-container {
+  display: flex;
+  display: -ms-flexbox; /* IE10 */
+  flex-wrap: wrap;
+  width:100%;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.flex-container > a {
+	flex: 1 1 auto;
 }
 
 /* Green */
