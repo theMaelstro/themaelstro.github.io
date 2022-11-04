@@ -58,6 +58,9 @@
                 <h2>MHFZZ Server Emulator by ZeruLight</h2>
                 <h5>Game server emulator.</h5>
                 <!--<img src="/img/app_showcase.png" alt="Application Showcase Image" />-->
+				
+				
+				<!--
                 <h4>Setup</h4>
                 <p>If you are only looking to install Erupe, please use a pre-compiled binary .</p>
                 <p>If you want to modify or compile Erupe yourself please read on.</p>
@@ -81,6 +84,39 @@
                     <a class="color-btn color-btn-green" href="https://github.com/ZeruLight/Erupe">Browse Source</a>
                     <a class="color-btn color-btn-green" href="https://github.com/xl3lackout/MHFZ-Quest-Files">Quests and Scenario Binary Files</a>
                 </div>
+				-->
+				
+				<h4 id="wiki_introduction">Introduction</h4>
+				<p>Erupe is server emulation software that attempts to emulate Capcom's own Monster Hunter Frontier servers.</p>
+				<p>The software is open source and is unfinished, though anyone is able to download and run their own server.</p>
+				<h4 id="wiki_setup">Setup</h4>
+				<ol>
+				<li>Install <a href="https://www.postgresql.org/download/" rel="nofollow">PostgreSQL</a> for your platform, Stack Builder is not required. Please note down any passwords during the setup process.</li>
+				<li>Go to the <a href="https://github.com/ZeruLight/Erupe/releases/latest" rel="nofollow">GitHub repository</a> and download the required ZIP for your platform, as well as all SQL files attached.</li>
+				<li>Open pgAdmin, then restore the main SQL database file (<em>Erupe.sql</em>) then run any other SQL files attached by opening the Query Tool then either dragging the file in or pasting the contents.</li>
+				<li>Finally, open <em>config.json</em> in a text editor and type in the requisite PostgreSQL password that you noted down previously.</li>
+				<li>You can then run <em>erupe-ce.exe</em>, though note you will need to acquire a copy of MHF to be able to connect to your own server.</li>
+				</ol>
+				<h4 id="wiki_hosting_a_private_server">Hosting a Private Server</h4>
+				<p>If you wish to invite others to play on your Private Server, some additional setup is required.</p>
+				<p>First, determine whether you are able to <a href="https://www.pcgamingwiki.com/wiki/Glossary:Port_forwarding" rel="nofollow">port forward</a>.</p>
+				<p>If you are able to port forward, forward the following ports:</p>
+				<ul>
+				<li>53310</li>
+				<li>53312</li>
+				<li>54001 - 54008 (if you cannot forward a range, you must add each port)</li>
+				</ul>
+				<p>You can use <a href="https://www.yougetsignal.com/tools/open-ports/" rel="nofollow">this webtool</a> to check if your ports are forwarded correctly, making sure the server is running.</p>
+				<p>If you are not able to port forward, you may choose to use VPN software such as <a href="https://vpn.net/" rel="nofollow">Hamachi</a> or <a href="https://www.radmin-vpn.com/" rel="nofollow">Radmin VPN</a> to bypass this requirement.</p>
+				<p>Anyone connecting to your server <strong>must</strong> follow the <a href="https://www.reddit.com/r/MHF/wiki/setup/#wiki_joining_a_private_server" rel="nofollow">Joining a Private Server</a> setup instructions.</p>
+				<p>Secondly, open <em>config.json</em> in a text editor and change the <em>host</em> (or <em>host_ip</em> on older builds) to be your computers LAN IP address, or your VPN client address if you are using one.</p>
+				<h4 id="wiki_credits">Credits</h4>
+				<p>Guide by Wish, <a href="https://www.reddit.com/r/MHF/wiki/erupe/">Visit Source</a></p>
+				<p>All contributors to Erupe are listed on the <a href="https://github.com/ZeruLight/Erupe/graphs/contributors" rel="nofollow">GitHub repository</a>.</p>
+				<div class="flex-container">
+                    <a class="color-btn color-btn-green" href="https://github.com/ZeruLight/Erupe">Browse Source</a>
+                </div>
+				
                 <h4>Latest Downloads (Stable)</h4>
                 <div class="flex-container">
                     <a class="color-btn color-btn-green" href="https://github.com/ZeruLight/Erupe/releases/latest/download/Windows-amd64.zip">Windows</a>
@@ -88,6 +124,9 @@
                     <a class="color-btn color-btn-green" href="https://github.com/ZeruLight/Erupe/releases/latest/download/Erupe.sql">Database File (New Setup)</a>
                     <a class="color-btn color-btn-green" href="https://github.com/ZeruLight/Erupe/releases/latest/download/Update.sql">Update File</a>
                 </div>
+				
+		
+				
             </div>
         </div>
 

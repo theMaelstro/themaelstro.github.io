@@ -142,17 +142,43 @@
 				<p>In corresponding fields enter the number of key quests you have completed and check urgent box.</p>
 
 				<h4>Examples</h4>
-				<p>Lets say you done 3 and there are total of 6 on HR1, you enter 3, you dont check urgent box.</p>
-				<p>If you completed 6 and there are 6 on HR1, you enter 6, if you completed urgent check a box for HR1.</p>
+				<p>Lets say you have done 3 key quests and there are total of 6 in HR1, you enter 3, you dont check urgent box.</p>
+				<p>If you completed 6 key quests and there are 6 nn HR1, you enter 6, if you completed urgent check a box for HR1.</p>
 				<br/>
 				<p>You do it accordingly for any further ranks.</p>
 
 				<p>Lets take another example: Seph Rebalance 2.1.</p>
 				<p>We want HR3 quest <b>Guardian of the Abyss (Taikun Zamuza).</b>.</p>
 				<p>We enter data in a way shown in the picture and press <b>Calculate</b>.</p>
-				<img src="/img/calc-help1.png" alt="" />
+				<img class="thin" src="/img/calc-help1.png" alt="" />
 				<p>Our result it <b>feff1d0000000000</b>, we have just completed Guardian of the Abyss (Taikun Zamuza).</p>
-				<img src="/img/calc-help2.png" alt="" />
+				<img class="thin" src="/img/calc-help2.png" alt="" />
+				<br/>
+				<h2>Public Server Guide</h2>
+				<p><span class="snippet">!kqf</span> command is used directly in game chat box if it is enabled on desired server.</p>
+				<p>Simply copy output command from calculator, paste it in chat and hit enter.</p>
+				<img class="wide" src="/img/calc-kqf.png" alt="" />
+				
+				<h2>Private Server Guide</h2>
+				<h4>Server Update 9.1.0+</h4>
+				<p>To enable <b>kqf</b> feature as host of your own server open <b>config.json</b> file and look for <span class="snippet">"Commands":</span> entry.</p>
+				<div class="codeblock">
+<pre class="success">
+	{
+		"Name": "KeyQuest",
+		"Enabled": false,
+		"Prefix": "!kqf"
+	},
+</pre>
+				</div>
+				<p>Then change <span class="snippet">"Enabled": false,</span> to <span class="snippet">"Enabled": true,</span></p>
+				
+				<h4>Legacy Versions</h4>
+				<p>Copy plain output from calculator and proceed to Save Manager Guide.</p>
+				<div class="flex-container">
+                    <a class="color-btn color-btn-green" href="/sub/savemanager.html">MHF Save Manager</a>
+                </div>
+				
 			</div>
 
         </div>
