@@ -459,13 +459,13 @@ codeblock {
 
 /* Gallery and modal view (zoom) */
 
-.slide-image {
+.clickable-image {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.slide-image:hover {opacity: 0.7;}
+.clickable-image:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
@@ -545,7 +545,7 @@ codeblock {
   }
 }
 
-.slide-image {
+.clickable-image {
   vertical-align: middle;
 }
 
