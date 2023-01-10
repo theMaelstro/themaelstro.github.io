@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us">
+
+<head>
+    <title>theMaelstro</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <script src="/script/toggleMenuButton.js" type="text/javascript"></script>
+    <script src="/script/toggleTopnav.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>theMaelstro</h1>
+        <p>Compact Index of things I am working on or supporting.</p>
+    </div>
+
+    <div class="topnav" id="myTopnav">
+        <a href="/index.html">Home</a>
+        <a href="/sub/news.html" class="active">News</a>
+        <!--<a href="/sub/contact.html">Contact</a>-->
+		<div class="dropdown">
+            <button class="dropdown-btn">Tools 
+			  <i class="fa fa-caret-down"></i>
+			</button>
+            <div id="download-container" class="dropdown-container">
+                <a href="/sub/flagcalc.html">Flag Calculator</a>
+				<a href="https://xl3lackout.github.io/MHFZ-Ferias-English-Project/">Item Index</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-btn">Downloads 
+      <i class="fa fa-caret-down"></i>
+    </button>
+            <div id="download-container" class="dropdown-container">
+                <a href="/sub/companionapp.html">MHFZZ Database</a>
+				<a href="/sub/savemanager.html">Save Manager</a>
+            </div>
+        </div>
+        <div class="menu-button-container icon" onclick="toggleMenuButton(this),toggleTopnav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+
+    <div class="row content">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Happy New Year!</h2>
+				<p>I know I am late, but I would like to wish everyone great hunts and a lot of time spent with friends!</p>
+				<p>We are saying goodbye to this year, but it is not over for hunters! To commemorate the year and achievements of people working on briging the game back, I asked big communities to take a photo with their playerbases so you can easily see them!.</p>
+				<br>
+				
+				<h2>Lets take a look at Frontier Renewal!</h2>
+				<!-- Slideshow Gallery -->
+				<div class="gallery-container">
+					<!-- Slideshow enumerator -->
+					<div class="gallery-numbertext" id="slide-number"></div>
+					
+					<!-- Gallery slides -->
+					<div class="mySlides">
+						<img class="slide-image" src="/img/2022_renewal_1.png" alt="Look who is sleeping in the back!" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<img class="slide-image" src="/img/2022_renewal_2.png" alt="Now that's a play." style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<img class="slide-image" src="/img/2022_renewal_4.png" alt="Meet the Mods, we are humans too." style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<img class="slide-image" src="/img/2022_renewal_6.png" alt="Just look at them, degenerates!" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<img class="slide-image" src="/img/2022_renewal_3.png" alt="Its apple juice, I swear! *gulp*" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<img class="slide-image" src="/img/2022_renewal_5.png" alt="A warmup for upcoming year." style="width:100%">
+					</div>
+
+					<!-- Navigation buttons -->
+					<a class="slide-prev" onclick="plusSlides(-1)"><pre><</pre></a>
+					<a class="slide-next" onclick="plusSlides(1)"><pre>></pre></a>
+
+					<!-- Gallery Slide caption -->
+					<div class="gallery-caption-container">
+						<p id="caption"></p>
+					</div>
+
+					<!-- Gallery bottom row with thumbnails -->
+					<div class="gallery-row">
+						<!-- Thumbs -->
+						<div class="gallery-column">
+							<img class="gallery-thumb cursor" src="/img/2022_renewal_1.png" style="width:100%" onclick="currentSlide(1)" alt="Look who is sleeping in the back!">
+						</div>
+						<div class="gallery-column">
+							<img class="gallery-thumb cursor" src="/img/2022_renewal_2.png" style="width:100%" onclick="currentSlide(2)" alt="Now that's a play.">
+						</div>
+						<div class="gallery-column">
+							<img class="gallery-thumb cursor" src="/img/2022_renewal_4.png" style="width:100%" onclick="currentSlide(3)" alt="Meet the Mods, we are humans too.">
+						</div>
+						<div class="gallery-column">
+							<img class="gallery-thumb cursor" src="/img/2022_renewal_6.png" style="width:100%" onclick="currentSlide(4)" alt="Just look at them, degenerates!">
+						</div>
+						<div class="gallery-column">
+							<img class="gallery-thumb cursor" src="/img/2022_renewal_3.png" style="width:100%" onclick="currentSlide(5)" alt="Its apple juice, I swear! *gulp*">
+						</div>
+						<div class="gallery-column">
+							<img class="gallery-thumb cursor" src="/img/2022_renewal_5.png" style="width:100%" onclick="currentSlide(6)" alt="A warmup for upcoming year.">
+						</div>
+					</div>
+				</div>
+
+				<!-- The Modal -->
+				<div id="myModal" class="modal cursor">
+					<span class="modal-close">&times;</span>
+					<img class="modal-content" id="modal-image">
+					<div id="modal-caption"></div>
+				</div>
+				
+				<h4>Server Info</h4>
+				<ul>
+                    <li>Admin: Spanner</li>
+                    <li>Location: USA</li>
+                </ul>
+				<p>Maybe not as big as the other two, but what we don't have in numbers we make up for it in atmosphere! Server uses the Seph rebalance patch so if you like key quests and you want to ask how many there are, the only answer I can give you is YES.</p>
+				<div class="flex-container">
+					<a class="color-btn color-btn-green" href="https://discord.gg/NwX9kajbt3">Join</a>
+				</div>
+				<br>
+				
+				
+				<h2>EU</h2>
+				<img src="/img/2022_server_eu.png" alt="EU" style="width:100%">
+				<h4>Server Info</h4>
+				<ul>
+                    <li>Admin: Dixdros</li>
+                    <li>Location: Europe</li>
+                </ul>
+				<p>Clean game experience for vanilla lovers. Or almost clean. You won't see key quest changes here (Looking at you HR5). However monster stats have been altered by Dionmid to make your experience more interesting!
+				<div class="flex-container">
+					<a class="color-btn color-btn-green" href="https://discord.gg/xBehkx4HUr">Join</a>
+				</div>
+				<br>
+				
+				
+				<h2>Rain</h2>
+				<img src="/img/2022_server_rain_1.jpg" alt="Rain" style="width:100%">
+				<img src="/img/2022_server_rain_2.jpg" alt="Rain" style="width:100%">
+				<p>Photos by 溟流 and Yuko</p>
+				<h4>Server Info</h4>
+				<ul>
+                    <li>Admin: EVE</li>
+                    <li>Location: Indonesia (Main Server), USA (New York State), Europe (Germany)</li>
+					<li>Special Feature: Gacha System</li>
+                </ul>
+				<p>Probably the only server to succesfully reimplement Gacha system, so if you like to take chances, then here is your chance to give a try! It also has its own discord binding system so you can jump right into game after claiming rewards on discord server.</p>
+				<div class="flex-container">
+					<a class="color-btn color-btn-green" href="https://discord.gg/TcpkpUpeGw">Join</a>
+				</div>
+				
+				<h2>Frontier Shenanigans Closed!</h2>
+				<img src="/img/2022_server_shenanigans.jpg" alt="Shenanigans" style="width:100%">
+				<p>FS server has annouced its end of service. Unfortunately the saves couldn't be recovered due to technical issues. So those of you who have made friends during its lifetime please don't leave them behind! Pick a server to head on another journey. For those of you who seek new company its a good time to start fresh and I hope you found something for yourself. If you need more help or you are at loss for your save game, EVE has something ready for you if you are migrating player from Shenanigans server. Join Rain and please don't abuse this gift.</p>
+			</div>		
+        </div>
+
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About Me</h2>
+                <h5>I am Mael, aka MAEL, aka theMaelstro</h5>
+                <p>I like to tinker with mods and simple software.</p>
+				<a href="https://www.youtube.com/channel/UCA3hASoTtbnTQ8-rfUtQV5w" class="fa fa-youtube youtube media-button"></a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="/script/dropdown.js" type="text/javascript"></script>
+<script src="/script/gallerySlideshowModal.js" type="text/javascript"></script>
+
+
+</html>
