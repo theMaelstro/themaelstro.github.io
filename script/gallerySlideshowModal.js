@@ -35,13 +35,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active-slide";
   images[slideIndex-1].onclick = function(){showModal(images[slideIndex-1].src, images[slideIndex-1].alt)};
-  /*function(){
-	 
-    modal.style.display = "block";
-    modalImg.src = images[slideIndex-1].src;
-    modalCaptionText.innerHTML = images[slideIndex-1].alt;
-	
-  }*/
   captionText.innerHTML = dots[slideIndex-1].alt;
   // Update slide number.
   document.getElementById('slide-number').innerHTML = slideIndex + " | " + slides.length;
