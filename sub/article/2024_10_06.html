@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us">
+
+<head>
+    <title>theMaelstro</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <script src="/script/toggleMenuButton.js" type="text/javascript"></script>
+    <script src="/script/toggleTopnav.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>theMaelstro</h1>
+        <p>Compact Index of things I am working on or supporting.</p>
+    </div>
+
+    <div class="topnav" id="myTopnav">
+        <a href="/index.html">Home</a>
+        <a href="/sub/news.html" class="active">News</a>
+        <!--<a href="/sub/contact.html">Contact</a>-->
+		<div class="dropdown">
+            <button class="dropdown-btn">Tools 
+			  <i class="fa fa-caret-down"></i>
+			</button>
+            <div id="download-container" class="dropdown-container">
+                <a href="/sub/flagcalc.html">Flag Calculator</a>
+				<a href="https://xl3lackout.github.io/MHFZ-Ferias-English-Project/">Item Index</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-btn">Downloads 
+      <i class="fa fa-caret-down"></i>
+    </button>
+            <div id="download-container" class="dropdown-container">
+                <a href="/sub/companionapp.html">MHFZZ Database</a>
+				<a href="/sub/savemanager.html">Save Manager</a>
+            </div>
+        </div>
+        <div class="menu-button-container icon" onclick="toggleMenuButton(this),toggleTopnav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+
+    <div class="row content">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>I got dragged into CAT CULT!</h2>
+				<p></p>
+				<p></p>
+				<br>
+				
+				<h2>Take a peek at... kitties! I'm not joking.</h2>
+				<!-- Slideshow Gallery -->
+				<div class="gallery-container">
+					<!-- Slideshow enumerator -->
+					<div class="gallery-numbertext" id="slide-number"></div>
+					
+					<!-- Gallery slides -->
+					<div class="mySlides">
+						<img class="clickable-image slide-image" src="/img/2022_renewal_1.webp" alt="Look who is sleeping in the back!" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<img class="clickable-image slide-image" src="/img/2022_renewal_2.webp" alt="Now that's a play." style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<img class="clickable-image slide-image" src="/img/2022_renewal_4.webp" alt="Meet the Mods, we are humans too." style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<img class="clickable-image slide-image" src="/img/2022_renewal_6.webp" alt="Just look at them, degenerates!" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<img class="clickable-image slide-image" src="/img/2022_renewal_3.webp" alt="Its apple juice, I promise! *gulp*" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<img class="clickable-image slide-image" src="/img/2022_renewal_5.webp" alt="A warmup for upcoming year." style="width:100%">
+					</div>
+
+					<!-- Navigation buttons -->
+					<a class="slide-prev" onclick="plusSlides(-1)"><pre><</pre></a>
+					<a class="slide-next" onclick="plusSlides(1)"><pre>></pre></a>
+
+					<!-- Gallery Slide caption -->
+					<div class="gallery-caption-container">
+						<p id="caption"></p>
+					</div>
+
+					<!-- Gallery bottom row with thumbnails -->
+					<div class="gallery-row">
+						<!-- Thumbs -->
+						<div class="gallery-column">
+							<img class="gallery-thumb cursor" src="/img/2022_renewal_1.webp" style="width:100%" onclick="currentSlide(1)" alt="Look who is sleeping in the back!">
+						</div>
+						<div class="gallery-column">
+							<img class="gallery-thumb cursor" src="/img/2022_renewal_2.webp" style="width:100%" onclick="currentSlide(2)" alt="Now that's a play.">
+						</div>
+						<div class="gallery-column">
+							<img class="gallery-thumb cursor" src="/img/2022_renewal_4.webp" style="width:100%" onclick="currentSlide(3)" alt="Meet the Mods, we are humans too.">
+						</div>
+						<div class="gallery-column">
+							<img class="gallery-thumb cursor" src="/img/2022_renewal_6.webp" style="width:100%" onclick="currentSlide(4)" alt="Just look at them, degenerates!">
+						</div>
+						<div class="gallery-column">
+							<img class="gallery-thumb cursor" src="/img/2022_renewal_3.webp" style="width:100%" onclick="currentSlide(5)" alt="Its apple juice, I promise! *gulp*">
+						</div>
+						<div class="gallery-column">
+							<img class="gallery-thumb cursor" src="/img/2022_renewal_5.webp" style="width:100%" onclick="currentSlide(6)" alt="A warmup for upcoming year.">
+						</div>
+					</div>
+				</div>
+
+				<!-- The Modal -->
+				<div id="myModal" class="modal cursor">
+					<span class="modal-close">&times;</span>
+					<img class="modal-content" id="modal-image">
+					<div id="modal-caption"></div>
+				</div>
+
+			</div>		
+        </div>
+
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About Me</h2>
+                <h5>I am Mael, aka MAEL, aka theMaelstro</h5>
+                <p>I like to tinker with mods and simple software.</p>
+				<a href="https://www.youtube.com/channel/UCA3hASoTtbnTQ8-rfUtQV5w" class="fa fa-youtube youtube media-button"></a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="/script/dropdown.js" type="text/javascript"></script>
+<script src="/script/gallerySlideshowModal.js" type="text/javascript"></script>
+
+
+</html>
